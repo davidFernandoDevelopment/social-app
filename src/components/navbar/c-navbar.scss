@@ -1,2 +1,38 @@
+@use '../../bemit/tools.scss' as mx;
+
 .c-navbar {
+  width: 100%;
+  padding: 0.7rem 0;
+  position: fixed;
+  top: 0;
+  background-color: var(--color-white);
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &-search {
+    &__input {
+      color: red;
+    }
+  }
+
+  &__create {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__profile {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }

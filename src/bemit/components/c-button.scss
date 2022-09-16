@@ -1,2 +1,18 @@
 .c-button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: var(--btn-padding);
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--primary {
+    color: white;
+    background-color: var(--color-primary);
+  }
 }

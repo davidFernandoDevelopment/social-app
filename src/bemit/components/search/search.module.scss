@@ -1,0 +1,20 @@
+.c-search {
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+  
+  &__icon {
+  }
+
+  &__input {
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    background-color: transparent;
+
+    &::placeholder {
+      color: var(--color-gray);
+    }
+  }
+}

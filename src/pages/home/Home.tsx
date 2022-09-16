@@ -1,5 +1,5 @@
 import './home.scss';
-import { Navbar } from '../../components/navbar';
+import { Navbar } from '../../components';
 
 const Home = () => {
     return (

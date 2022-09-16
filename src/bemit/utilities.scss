@@ -1,0 +1,8 @@
+.u-text {
+  &-bold {
+    font-weight: 500;
+  }
+  &-muted {
+    color: var(--color-gray);
+  }
+}
