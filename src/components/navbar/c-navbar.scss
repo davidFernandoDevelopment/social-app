@@ -8,6 +8,8 @@
   background-color: var(--color-white);
   z-index: 10;
 
+  $b: &;
+
   &__container {
     display: flex;
     align-items: center;
@@ -17,9 +19,9 @@
   &__logo {
   }
 
-  &-search {
-    &__input {
-      color: red;
+  #{$b}-search {
+    @include mx.to(992px) {
+      display: none;
     }
   }
 

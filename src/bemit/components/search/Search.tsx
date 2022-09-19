@@ -1,4 +1,4 @@
-import styles from './search.module.scss';
+import './search.scss';
 
 interface Props {
   p?: string;
@@ -6,14 +6,21 @@ interface Props {
 
 const Search = ({ p = '' }: Props) => {
 
-  const parent = p ? p : '';
+  const parent = p ? `${p}-search` : '';
 
   return (
-    <div className={styles['c-search']}>
-      <i className={styles['c-search__icon']}></i>
+    <div className={['c-search', parent].join(' ')}>
+      <i className={[
+        'uil uil-search',
+        'c-search__icon',
+        `${parent}__icon`
+      ].join(' ')}></i>
       <input
         type="text"
-        className={styles['c-search__input']}
+        className={[
+          'c-search__input',
+          `${parent}__input`
+        ].join(' ')}
         placeholder="Que buscaremos ..."
       />
     </div>
