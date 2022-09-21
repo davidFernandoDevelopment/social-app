@@ -1,0 +1,11 @@
+.c-avatarGroup {
+  display: flex;
+
+  & > * {
+    &:first-child {
+      margin: 0;
+    }
+    border: 2px solid rgba(255, 255, 255);
+    margin-left: -0.6rem;
+  }
+}

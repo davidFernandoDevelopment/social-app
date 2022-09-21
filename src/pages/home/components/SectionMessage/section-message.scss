@@ -1,0 +1,26 @@
+.c-section-message {
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icon {
+    font-size: 1.4rem;
+  }
+
+  &__messages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  //* COMPONENT TABS
+  &__tabs {
+    margin-bottom: 1rem;
+    margin-top: 0.75rem;
+  }
+}

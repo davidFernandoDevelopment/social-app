@@ -40,6 +40,7 @@ section {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
+  min-height: 100vh;
   overflow-x: hidden;
   color: var(--color-dark);
   background-color: var(--color-light);

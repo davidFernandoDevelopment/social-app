@@ -1,5 +1,5 @@
 import './c-navbar.scss';
-import { Search } from '../../bemit/components';
+import { Button, Search } from '../../bemit/components';
 import ImageAvatar from '../../images/profile-1.jpg';
 
 const Navbar = () => {
@@ -11,12 +11,9 @@ const Navbar = () => {
         </h2>
         <Search p='c-navbar' />
         <div className="c-navbar__create">
-          <label
-            className='c-button c-button--primary'
-            htmlFor="create post"
-          >
+          <Button>
             Create post
-          </label>
+          </Button>
           <div className="c-navbar__profile">
             <img
               className="c-navbar__img"

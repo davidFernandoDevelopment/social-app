@@ -2,13 +2,13 @@
   background-color: var(--color-light);
   border-radius: var(--border-radius);
   padding: var(--search-padding);
+  display: flex;
+  gap: 1rem;
 
   &__icon {
   }
 
   &__input {
-    width: 30vw;
-    margin-left: 1rem;
     font-size: 0.9rem;
     color: var(--color-dark);
     background-color: transparent;

@@ -1,0 +1,51 @@
+.c-feed {
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__user {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__data {
+    }
+
+    &__action {
+    }
+  }
+
+  &__photo {
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: 0.7rem 0;
+  }
+
+  &__action-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+  }
+
+  &__liked {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &-avatarGroup {
+      > * {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+    }
+  }
+}

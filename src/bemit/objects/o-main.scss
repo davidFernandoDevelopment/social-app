@@ -1,0 +1,10 @@
+.o-main {
+  position: relative;
+  top: var(--navbar-height);
+
+  &__container {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: minmax(auto, 300px) auto;
+  }
+}

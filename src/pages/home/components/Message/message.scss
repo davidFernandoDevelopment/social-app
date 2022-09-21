@@ -1,0 +1,9 @@
+.c-message {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+
+  &__text {
+    font-size: 0.8rem;
+  }
+}
