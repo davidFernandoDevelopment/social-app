@@ -4,13 +4,23 @@
   grid-template-columns: 2fr 1fr;
 
   &__main {
+    display: grid;
+    gap: 1.5rem;
   }
   &__sidebar {
     height: max-content;
     position: sticky;
     top: var(--sticky-top-right);
     bottom: 0;
+    gap: 1.5rem;
   }
+
+  &__sidebar,
+  &__feeds {
+    display: grid;
+    gap: 1rem;
+  }
+
   &__stories {
     height: 12rem;
     display: flex;

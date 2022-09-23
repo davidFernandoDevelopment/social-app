@@ -1,5 +1,5 @@
-import { Avatar, Button } from '../../../../bemit/components';
 import './request.scss';
+import { Avatar, Button, Card } from '../../../../bemit/components';
 
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 
 const Request = ({ avatar, name, desc }: Props) => {
   return (
-    <div className='c-request '>
+    <Card className='c-request'>
       <div className="c-request__info">
         <Avatar image={avatar} />
         <div className="c-request__data">
@@ -22,7 +22,7 @@ const Request = ({ avatar, name, desc }: Props) => {
         <Button>Aceptar</Button>
         <Button variant='secondary'>Rechazar</Button>
       </div>
-    </div>
+    </Card>
   );
 };
 

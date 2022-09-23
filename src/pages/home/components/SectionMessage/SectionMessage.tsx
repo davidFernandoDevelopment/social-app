@@ -1,12 +1,12 @@
 import "./section-message.scss";
-import { Search, Tab, Tabs } from '../../../../bemit/components';
+import { Card, Search, Tab, Tabs } from '../../../../bemit/components';
 import { messages } from '../../../../data';
 import Message from '../Message/Message';
 
 
 const SectionMessage = () => {
     return (
-        <div className='c-section-message'>
+        <Card className='c-section-message'>
             <div className="c-section-message__header">
                 <h4>Messages</h4>
                 <i className='c-section-message__icon uil uil-edit'></i>
@@ -24,7 +24,7 @@ const SectionMessage = () => {
                     ))
                 }
             </div>
-        </div>
+        </Card>
     );
 };
 

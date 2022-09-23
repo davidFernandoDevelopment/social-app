@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup } from '../../../../bemit/components';
+import { Avatar, AvatarGroup, Card } from '../../../../bemit/components';
 import './feed.scss';
 
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
 
 const Feed = ({ avatar, name, place, time, photo, liked }: Props) => {
     return (
-        <article className='c-feed'>
+        <Card className='c-feed'>
             <div className="c-feed__header">
                 <div className="c-feed__header__user">
                     <Avatar image={avatar} alt='Card Header avatar' />
@@ -63,7 +63,7 @@ const Feed = ({ avatar, name, place, time, photo, liked }: Props) => {
             <div className="u-text-muted">
                 View all 23 commnents
             </div>
-        </article>
+        </Card>
     );
 };
 

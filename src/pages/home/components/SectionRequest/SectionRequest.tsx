@@ -8,11 +8,13 @@ const SectionRequest = () => {
     return (
         <div className='c-section-request'>
             <h4 className='c-section-request__title'>Request</h4>
-            {
-                requests.map((req, index) => (
-                    <Request key={index} {...req} />
-                ))
-            }
+            <div className="c-section-request__requests">
+                {
+                    requests.map((req, index) => (
+                        <Request key={index} {...req} />
+                    ))
+                }
+            </div>
         </div>
     );
 };

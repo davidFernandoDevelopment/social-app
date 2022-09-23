@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 
 import { Home, Explore } from './pages';
-import { Navbar, Sidebar } from './components';
+import { Navbar, Sidebar, Theme } from './ui';
 
 const App = () => {
   return (
@@ -23,6 +23,7 @@ const App = () => {
           </div>
         </div>
       </main>
+      <Theme />
     </Router>
   );
 };
