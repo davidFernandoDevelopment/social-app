@@ -7,6 +7,7 @@
   top: 0;
   background-color: var(--color-white);
   z-index: 10;
+  box-shadow: 1px 1px 10px var(--color-gray);
 
   $b: &;
 
@@ -18,6 +19,9 @@
   }
 
   &__logo {
+    @include mx.to(699px) {
+      font-size: 1.5rem;
+    }
   }
 
   #{$b}-search {
@@ -30,15 +34,33 @@
     }
   }
 
-  &__create {
+  #{$b}-icon {
+    cursor: pointer;
+    border-radius: 50%;
+
+    &__badge {
+      padding: 0.05rem 0.2rem;
+    }
+  }
+
+  &__list {
     display: flex;
     gap: 2rem;
     align-items: center;
   }
 
+  &__item {
+    position: relative;
+    border-radius: 50%;
+
+    &--active {
+      background-color: var(--color-light);
+    }
+  }
+
   &__profile {
-    width: 2.7rem;
-    aspect-ratio: 1/1;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     overflow: hidden;
   }

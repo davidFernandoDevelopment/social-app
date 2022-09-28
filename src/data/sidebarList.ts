@@ -21,20 +21,20 @@ export const sidebarList: Item[] = [
 		popup: false,
 		badge: false,
 	},
-	{
-		path: '/notifications',
-		name: 'Notifications',
-		icon: 'uil uil-bell',
-		popup: true,
-		badge: true,
-	},
-	{
-		path: '/messages',
-		name: 'Messages',
-		icon: 'uil uil-envelope-alt',
-		popup: false,
-		badge: true,
-	},
+	// {
+	// 	path: '/notifications',
+	// 	name: 'Notifications',
+	// 	icon: 'uil uil-bell',
+	// 	popup: true,
+	// 	badge: true,
+	// },
+	// {
+	// 	path: '/messages',
+	// 	name: 'Messages',
+	// 	icon: 'uil uil-envelope-alt',
+	// 	popup: false,
+	// 	badge: true,
+	// },
 	{
 		path: '/bookmarks',
 		name: 'Bookmarks',
@@ -52,7 +52,7 @@ export const sidebarList: Item[] = [
 	{
 		path: '/theme',
 		name: 'Theme',
-		icon: 'uil uil-pallete',
+		icon: 'uil uil-paint-tool',
 		popup: false,
 		badge: false,
 	},
@@ -62,5 +62,5 @@ export const sidebarList: Item[] = [
 		icon: 'uil uil-setting',
 		popup: false,
 		badge: false,
-	},
+	}
 ];

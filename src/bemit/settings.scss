@@ -1,3 +1,5 @@
+@use './tools.scss' as mx;
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -14,6 +16,13 @@
   --color-success: hsl(120, 95%, 65%);
   --color-danger: hsl(0, 95%, 65%);
 
+  --color-gray-100: hsl(var(--hue), 47%, 94%);
+  --color-gray-200: hsl(var(--hue), 26%, 75%);
+  --color-gray-300: hsl(var(--hue), 24%, 64%);
+  --color-gray-400: hsl(var(--hue), 16%, 41%);
+  --color-gray-500: hsl(var(--hue), 44%, 25%);
+  --color-gray-600: hsl(var(--hue), 48%, 15%);
+
   --border-radius: 2rem;
   --card-border-radius: 1rem;
   --btn-padding: 0.6rem 2rem;
@@ -25,4 +34,10 @@
 
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+}
+
+:root {
+  @include mx.to(680px) {
+    --navbar-height: 56px;
+  }
 }

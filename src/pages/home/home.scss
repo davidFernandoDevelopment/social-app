@@ -1,24 +1,53 @@
+@use '../../bemit/tools.scss' as mx;
+
 .home {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr min-content;
+
+  @include mx.to(1200px) {
+    gap: 1rem;
+    grid-template-columns: 3fr min-content;
+  }
+
+  @include mx.to(899px) {
+    grid-template-columns: auto;
+  }
 
   &__main {
     display: grid;
     gap: 1.5rem;
-  }
-  &__sidebar {
-    height: max-content;
-    position: sticky;
-    top: var(--sticky-top-right);
-    bottom: 0;
-    gap: 1.5rem;
+    padding: 1rem 0;
+
+    > * {
+      //* Por defecto el tamaño de los tracks toman el tamaño del contenido.
+      min-width: 0;
+    }
   }
 
   &__sidebar,
   &__feeds {
     display: grid;
     gap: 1rem;
+  }
+
+  &__sidebar {
+    height: max-content;
+    position: sticky;
+    gap: 1.5rem;
+
+    top: var(--navbar-height);
+    padding: 1rem 0;
+    overflow: hidden overlay;
+    max-height: calc(100vh - var(--navbar-height));
+    &::-webkit-scrollbar-track {
+      margin: 1rem 0;
+    }
+    @include mx.show-scrollbar-hover;
+
+    @include mx.to(890px) {
+      display: none;
+    }
   }
 
   &__stories {

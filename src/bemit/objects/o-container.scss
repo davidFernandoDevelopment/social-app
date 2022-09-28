@@ -1,4 +1,10 @@
+@use '../tools.scss' as mx;
+
 .o-container {
   width: 80%;
   margin-inline: auto;
+
+  @include mx.to(1200px) {
+    width: 96%;
+  }
 }

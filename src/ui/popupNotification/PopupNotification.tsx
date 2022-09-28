@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './c-popup-notification.scss';
 import { notifications } from '../../data';
 import { Avatar, Card } from '../../bemit/components';
@@ -17,7 +19,13 @@ const PopupNotification = () => {
           </div>
         ))
       }
-    </Card>
+      <Link
+        to="/notifications"
+        className='c-popup-notification__all'
+      >
+        Ver todos
+      </Link>
+    </Card >
   );
 };
 

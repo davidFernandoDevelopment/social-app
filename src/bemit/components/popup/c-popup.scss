@@ -1,0 +1,54 @@
+.c-popup {
+  position: relative;
+  z-index: 200;
+
+  $b: &;
+
+  &.is-active {
+    z-index: 201;
+  }
+
+  &__button {
+    &:hover,
+    #{$b}.is-active & {
+      background-color: var(--color-light);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    right: 0.25rem;
+
+    transform: scale(0);
+    transform-origin: calc(100% - 1.5rem) 0.25rem;
+    transition: transform 0.3s ease;
+
+    &.is-expand {
+      transform: scale(1);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1.2rem;
+      height: 1.2rem;
+      display: block;
+      top: -7px;
+      right: 10px;
+      background-color: var(--color-white);
+      transform: rotate(45deg);
+    }
+  }
+
+  &__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    visibility: hidden;
+
+    #{$b}__content.is-expand + & {
+      visibility: visible;
+    }
+  }
+}

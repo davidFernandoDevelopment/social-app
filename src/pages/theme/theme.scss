@@ -1,24 +1,17 @@
 .theme {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  margin-top: 1.5rem;
   text-align: center;
   display: grid;
   place-items: center;
 
-  //   opacity: 0;
-
   font-size: 0.9rem;
+  transition: opacity 0.3s ease;
 
   h4 {
     margin-bottom: 1rem;
   }
   &__content {
-    width: 50%;
+    width: 75%;
     padding: 3rem;
     box-shadow: 2px 2px 8px 2px var(--color-gray);
   }

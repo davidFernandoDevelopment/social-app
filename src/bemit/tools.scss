@@ -1,6 +1,26 @@
 @mixin to($bp) {
-    @media screen and (max-width: $bp) {
-      @content;
-    }
+  @media screen and (max-width: $bp) {
+    @content;
   }
-  
+}
+
+@mixin show-scrollbar-hover {
+  opacity: 1;
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    width: 0;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray-300);
+  }
+  &:hover::-webkit-scrollbar {
+    width: 8px;
+  }
+}

@@ -1,3 +1,5 @@
+@use '../tools.scss' as mx;
+
 .o-main {
   position: relative;
   top: var(--navbar-height);
@@ -5,6 +7,32 @@
   &__container {
     display: grid;
     column-gap: 2rem;
-    grid-template-columns: minmax(auto, 300px) auto;
+    grid-template-columns: minmax(auto, 250px) auto;
+
+    @include mx.to(1200px) {
+      column-gap: 1rem;
+      grid-template-columns: 5rem auto;
+    }
+
+    @include mx.to(900px) {
+      grid-template-columns: 4em auto;
+    }
+
+    @include mx.to(680px) {
+      grid-template-columns: 3em auto;
+      column-gap: 0.5rem;
+      // width: 100%;
+    }
+  }
+  &-content {
+    @include mx.to(899px) {
+      width: 90%;
+      margin-inline: auto;
+    }
+
+    @include mx.to(680px) {
+      width: 100%;
+      padding-right: 0.5rem;
+    }
   }
 }

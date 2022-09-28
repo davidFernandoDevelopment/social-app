@@ -4,8 +4,8 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom';
 
-import { Home, Explore } from './pages';
-import { Navbar, Sidebar, Theme } from './ui';
+import { Navbar, Sidebar } from './ui';
+import { Home, Theme, Explore, Notification } from './pages';
 
 const App = () => {
   return (
@@ -17,13 +17,14 @@ const App = () => {
           <div className="o-main-content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="theme" element={<Theme />} />
               <Route path="explore" element={<Explore />} />
+              <Route path="notifications" element={<Notification />} />
               <Route path="*" element={<Home />} />
             </Routes>
           </div>
         </div>
       </main>
-      <Theme />
     </Router>
   );
 };

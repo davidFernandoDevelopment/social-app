@@ -1,0 +1,64 @@
+.c-switch {
+  $b: &;
+
+  &__input {
+    display: none;
+    box-sizing: initial;
+
+    &:focus + #{$b}__btn::after {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08),
+        inset 0px 0px 0px 3px #9c9c9c;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 8em;
+    height: 4em;
+    padding: 4px;
+    border-radius: 4em;
+    background: #fbfbfb;
+    border: 2px solid #e8eae9;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      border-radius: 4em;
+      background: #fbfbfb;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+
+      transition: box-shadow 0.4s ease, left 0.4s ease,
+        background-color 0.4s ease, padding 0.4s ease, margin 0.4s ease;
+    }
+
+    &:active::after {
+      padding-right: 1.6em;
+      box-sizing: initial;
+
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08),
+        inset 0px 0px 0px 3px #9c9c9c;
+    }
+
+    &--on {
+      background: #86d993;
+
+      &::after {
+        left: 50%;
+      }
+
+      &:active {
+        box-shadow: none;
+
+        &::after {
+          margin-left: -1.6em;
+        }
+      }
+    }
+  }
+}

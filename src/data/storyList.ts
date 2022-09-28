@@ -25,14 +25,14 @@ export const stories: Story[] = [
 		avatar: require('../images/profile-11.jpg'),
 		image: require('../images/story-4.jpg'),
 	},
-	{
-		name: 'Renzo Rojas',
-		avatar: require('../images/profile-12.jpg'),
-		image: require('../images/story-5.jpg'),
-	},
-	{
-		name: 'Mario Dueñas',
-		avatar: require('../images/profile-13.jpg'),
-		image: require('../images/story-6.jpg'),
-	},
+	// {
+	// 	name: 'Renzo Rojas',
+	// 	avatar: require('../images/profile-12.jpg'),
+	// 	image: require('../images/story-5.jpg'),
+	// },
+	// {
+	// 	name: 'Mario Dueñas',
+	// 	avatar: require('../images/profile-13.jpg'),
+	// 	image: require('../images/story-6.jpg'),
+	// },
 ];

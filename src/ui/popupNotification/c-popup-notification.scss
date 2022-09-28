@@ -1,36 +1,24 @@
 .c-popup-notification {
-    position: absolute;
-    top: 0;
-    left: 110%;
-    width: 30rem;
-    box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60%, 25);
-    z-index: 9;
+  width: 30rem;
+  box-shadow: 5px 5px 10px var(--color-primary);
 
-    display: none;
 
-    //* TODO: ACTIVE POPUP
-    // #{$b}__link--active & {
-    //   display: block;
-    // }
+  &-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  &-time {
+    display: block;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 1.2rem;
-      height: 1.2rem;
-      display: block;
-      background-color: var(--color-white);
-      left: -0.6rem;
-      transform: rotate(45deg);
+  &__all {
+    display: block;
+    text-align: center;
+
+    &:hover {
+      color: var(--color-primary);
     }
-
-    &-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    &-time {
-      display: block;
-    }
+  }
 }

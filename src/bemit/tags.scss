@@ -7,7 +7,7 @@ li {
 a {
   display: inline-block;
   text-decoration: none;
-  color: var(--color-gray-100);
+  color: var(--color-gray);
 }
 
 h1,
@@ -17,7 +17,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  color: var(--color-gray-100);
+  color: var(--color-gray);
 }
 
 h1 {
@@ -43,6 +43,8 @@ body {
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
+  //* TODO: BUG, YA QUE SOLO FUNCIONA PARA WEBKIT
+  overflow-y: overlay;
   color: var(--color-dark);
   background-color: var(--color-light);
 }
